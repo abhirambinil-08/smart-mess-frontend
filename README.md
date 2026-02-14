@@ -1,16 +1,56 @@
-# React + Vite
+# Smart Mess Feedback System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for the Smart Mess Feedback System.  
+It allows users to submit feedback and admins to view analytics and manage mess configuration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React (Vite)
+- React Router
+- Chart.js
+- react-chartjs-2
+- Fetch API
+- LocalStorage (JWT handling)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Public Feedback Interface
+
+- Institution selection
+- Mess selection
+- Meal type selection
+- 1–5 rating system
+- Optional comment (200 character limit)
+- Anonymous submission
+- Duplicate prevention message
+- Points earned preview
+- Meal time restriction display
+
+### Admin Panel
+
+- Secure login using email & password
+- JWT stored in localStorage
+- Dashboard with total feedback count
+- Average ratings display
+- Interactive charts (Chart.js)
+- AI insights section
+- Mess configuration panel
+- QR code generation and download
+
+---
+
+## Run Locally
+
+cd frontend
+
+npm install
+
+npm run dev
+
+
+Frontend runs on:
+http://localhost:5173
